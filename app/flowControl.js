@@ -11,6 +11,23 @@ define(function() {
       //
       // otherwise the function should return the number, or false if no number
       // was provided
+      console.log(num);
+      if(num % 3 == 0){
+        if(num % 5 == 0){
+          return "fizzbuzz";
+        }
+        else{
+          return "fizz";
+        }
+      }
+      else{
+        if(num % 5 == 0){
+          return "buzz";
+        }
+        else{
+          return num;
+        }
+      }
     }
   };
 });
